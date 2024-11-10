@@ -1,0 +1,112 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #111;
+}
+
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quests-btn {
+    background-color: #FFD740;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: #111;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.auth a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth a:hover {
+    text-decoration: none;
+    color: #7417bc;
+}
+
+
+/* MIDDLE VIDEO INTERFACE */
+.hero {
+    padding: 5rem 2rem;
+    background: linear-gradient(to bottom, #0b1f4b, #020e1e);
+    /* background-image: url(coding.gif); */
+    background-position: center;
+  background-size: cover;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 7rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.usdc {
+    color: #FFD740;
+    font-weight: bold;
+}
+
+.cta-btn {
+    padding: 1rem 2rem;
+    background-color: #6a0dad; 
+    background: linear-gradient(to bottom right, #6a0dad, #1e90ff); 
+    color: #fff; 
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(to bottom right, #9b30ff, #00bfff); 
+    transform: scale(1.05); 
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff; /* White text for contrast */
+    text-decoration: none;
+  }
+  
+  .logo li {
+    list-style-type: none; /* Removes bullet points from list item */
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #ffffff; /* Ensure link color matches logo color */
+  }
+  
+

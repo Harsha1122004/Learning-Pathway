@@ -1,0 +1,56 @@
+/* Middle Section Container */
+.Middle-Section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #1e1e1e; /* Dark background for contrast */
+    color: #ffffff; /* White text for readability */
+    min-height: 60vh;
+  }
+  
+  /* Left Side - Text Content */
+  .left-middle {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .left-middle h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .left-middle h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #00bcd4; /* Accent color for underline */
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+  
+  /* Right Side - Image Content */
+  .right-middle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Middle-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .Middle-img:hover {
+    transform: scale(1.05); /* Subtle zoom effect on hover */
+  }
+  

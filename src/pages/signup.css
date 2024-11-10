@@ -1,0 +1,146 @@
+/* Base styles */
+:root {
+  --background-light: #ffffff;
+  --background-dark: #121212;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --input-background-light: #f0f0f0;
+  --input-background-dark: #2a2a2a;
+  --input-border: #ccc;
+  --button-background-light: #4a90e2;
+  --button-background-dark: #1e88e5;
+  --button-hover-light: #357ab7;
+  --button-hover-dark: #1565c0;
+}
+
+/* Light theme */
+body.light {
+  --background: var(--background-light);
+  --text: var(--text-light);
+  --input-background: var(--input-background-light);
+  --button-background: var(--button-background-light);
+  --button-hover: var(--button-hover-light);
+}
+
+/* Dark theme */
+body.dark {
+  --background: var(--background-dark);
+  --text: var(--text-dark);
+  --input-background: var(--input-background-dark);
+  --button-background: var(--button-background-dark);
+  --button-hover: var(--button-hover-dark);
+}
+
+/* Login container */
+.login {
+  background-color: var(--background);
+  color: var(--text);
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Form elements */
+.login h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.login form input[type="email"],
+.login form input[type="password"],
+.login form input[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.login form input[type="email"],
+.login form input[type="password"] {
+  background-color: var(--input-background);
+  color: var(--text);
+}
+
+.login form input[type="email"]:focus,
+.login form input[type="password"]:focus {
+  outline: none;
+  border-color: var(--button-background);
+}
+
+/* Submit button */
+.login form input[type="submit"] {
+  background-color: var(--button-background);
+  color: var(--text-dark);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.login form input[type="submit"]:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Link styles */
+.login p {
+  color: var(--text);
+  margin: 1rem 0;
+}
+
+.login a {
+  color: var(--button-background);
+  text-decoration: none;
+}
+
+.login a:hover {
+  color: var(--button-hover);
+}
+
+/* Theme switch button */
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--button-background);
+  color: var(--text-dark);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: var(--button-hover);
+}
+.login-btn {
+  
+
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.login-btn:hover {
+ 
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
